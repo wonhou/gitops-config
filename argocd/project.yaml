@@ -4,21 +4,17 @@ metadata:
   name: gitops-project
   namespace: argocd
 spec:
-  description: "ops-platform 프로젝트 (ops-app1 + ops-app2)"
-
+  description: "gitops-app 프로젝트"
   sourceRepos:
     - "https://github.com/wonhou/gitops-config"
-
   destinations:
     - server: "https://kubernetes.default.svc"
       namespace: "ops-app1-*"
     - server: "https://kubernetes.default.svc"
       namespace: "ops-app2-*"
-
   clusterResourceWhitelist:
     - group: ""
       kind: Namespace
-
   namespaceResourceWhitelist:
     - group: "*"
       kind: "*"

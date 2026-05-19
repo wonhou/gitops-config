@@ -30,7 +30,7 @@ spec:
     spec:
       project: gitops-project
       source:
-        repoURL: https://github.com/$GITHUB_USERNAME/gitops-config
+        repoURL: https://github.com/wonhou/gitops-config
         targetRevision: main
         path: "apps/{{.app}}/overlays/{{.env}}"
       destination:

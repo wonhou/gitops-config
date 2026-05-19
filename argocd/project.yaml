@@ -7,7 +7,7 @@ spec:
   description: "ops-platform 프로젝트 (ops-app1 + ops-app2)"
 
   sourceRepos:
-    - "https://github.com/$GITHUB_USERNAME/gitops-config"
+    - "https://github.com/wonhou/gitops-config"
 
   destinations:
     - server: "https://kubernetes.default.svc"
